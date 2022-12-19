@@ -1,8 +1,9 @@
 import { useMutation, useQuery } from '../convex/_generated/react'
-import { DropdownMenu, Button, SideNav, Toggle } from '../components'
+import { DropdownMenu, Button, SideNav, Toggle, Table } from '../components'
 import { styled } from '../stitches.config'
-import { MagicWandIcon } from '@radix-ui/react-icons'
+import { ArrowRightIcon, MagicWandIcon } from '@radix-ui/react-icons'
 import { useState } from 'react'
+import { THeadRow, TH, TRlink, TD } from '../components/Table'
 
 const Title = styled('span', {
   color: 'var(--colors-textPrimary)'
@@ -96,6 +97,33 @@ export default function Home() {
             addTokenSet()
           }}>Add token set</Button>
         </Box>
+        {tokenSet &&
+          <Table>
+            <THeadRow>
+              <TH>Id</TH>
+              <TH>Theme</TH>
+              <TH>Last lastUpdated</TH>
+              <TH> </TH>
+            </THeadRow>
+            <TRlink
+              href={"/rooms/"}
+              style={{ width: "100%", display: "table-row" }}
+            >
+              <TD>{tokenSet._id.id}</TD>
+              <TD>{tokenSet.tokenSet[0].theme}</TD>
+              <TD>{tokenSet.lastUpdated}</TD>
+              <TD
+                css={{
+                  width: "40px",
+                }}
+              >
+                {" "}
+                <ArrowRightIcon />{" "}
+              </TD>
+            </TRlink>
+
+          </Table>
+        }
       </Box>
       <Toggle css={{
         position: 'absolute',

@@ -15,6 +15,8 @@ const THeadRow = styled("div", {
 });
 
 const TRlink = styled(Link, {
+  textDecoration: 'none',
+  color:'$textPrimary',
   height: "$6",
   display: "table-row",
   outline: "none",
