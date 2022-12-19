@@ -9,14 +9,17 @@ import { NextPage } from "next";
 import React from "react";
 
 const globalStyles = globalCss({
+
   html: {
     overflowX: "hidden",
   },
 
   body: {
     margin: 0,
-    backgroundColor: "$mauve1",
-    color: "$mauve12",
+    backgroundColor: "$bgPrimary",
+    '.dark-theme': {
+      color: "$textPrimary",
+    }
   },
 
   "body, button": {

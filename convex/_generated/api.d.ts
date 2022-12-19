@@ -10,6 +10,8 @@
  */
 
 import type { ApiFromModules } from "convex/api";
+import type * as addTokenSet from "../addTokenSet";
+import type * as getTokenSet from "../getTokenSet";
 
 /**
  * A type describing your app's public Convex API.
@@ -20,4 +22,7 @@ import type { ApiFromModules } from "convex/api";
  * This type should be used with type-parameterized classes like
  * `ConvexReactClient` to create app-specific types.
  */
-export type API = ApiFromModules<{}>;
+export type API = ApiFromModules<{
+  addTokenSet: typeof addTokenSet;
+  getTokenSet: typeof getTokenSet;
+}>;

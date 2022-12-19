@@ -1,7 +1,8 @@
 {
   "project": "reactive-design-tokens",
   "team": "daviddkkim",
-  "prodUrl": "https://calm-kudu-735.convex.cloud",
+  "prodUrl": "https://small-salmon-206.convex.cloud",
   "functions": "convex/",
-  "authInfo": []
+  "authInfo": [
+  ]
 }
