@@ -8,6 +8,7 @@ export default defineSchema({
         tokens: s.object({
           textPrimary: s.string(),
           textSecondary: s.string(),
+          textAccent: s.string(),
           textMuted: s.string(),
           bgPrimary: s.string(),
           bgSecondary: s.string(),

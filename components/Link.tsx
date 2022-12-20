@@ -59,6 +59,10 @@ const StyledLink = styled(Link, {
       true: {
         backgroundColor: "$fgActive",
         borderColor: "transparent",
+        color: '$textPrimary',
+        'svg' : {
+          color: '$textAccent'
+        }
       },
       false: {},
     },

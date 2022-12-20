@@ -11,6 +11,7 @@ const Title = styled('span', {
 
 const Main = styled('main', {
   display: 'flex',
+  backgroundColor: '$bgPrimary'
 });
 
 const Box = styled('div', {
@@ -27,6 +28,7 @@ export default function Home() {
     textPrimary: string,
     textSecondary: string,
     textMuted: string,
+    textAccent: string,
     bgPrimary: string,
     bgSecondary: string,
     fg: string,
@@ -53,6 +55,7 @@ export default function Home() {
       '--colors-textPrimary': tokenSet.textPrimary,
       '--colors-textSecondary': tokenSet.textSecondary,
       '--colors-textMuted': tokenSet.textMuted,
+      '--colors-textAccent': tokenSet.textAccent,
       '--colors-bgPrimary': tokenSet.bgPrimary,
       '--colors-bgSecondary': tokenSet.bgSecondary,
       '--colors-fg': tokenSet.fg,
@@ -137,3 +140,4 @@ export default function Home() {
     </Main >
   )
 }
+

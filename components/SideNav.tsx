@@ -46,6 +46,7 @@ const SideNav = () => {
 
   const pathname = router.pathname;
   const handleActiveLink = (link: string) => {
+    if (link === '') return true;
     if (pathname.includes(link)) return true;
     return false;
   };
@@ -85,15 +86,15 @@ const SideNav = () => {
             justifyContent: 'space-between'
           }}>Team Sample <CaretDownIcon /> </Button>
         }>
-            <DropdownMenu.Item>
-              Team Sample 2
-            </DropdownMenu.Item>
-            <DropdownMenu.Item>
-              Team Another Sample
-            </DropdownMenu.Item>
-            <DropdownMenu.Item>
-              Team Sample 5
-            </DropdownMenu.Item>
+          <DropdownMenu.Item>
+            Team Sample 2
+          </DropdownMenu.Item>
+          <DropdownMenu.Item>
+            Team Another Sample
+          </DropdownMenu.Item>
+          <DropdownMenu.Item>
+            Team Sample 5
+          </DropdownMenu.Item>
         </DropdownMenu.DropdownMenu>
         <Box
           css={{
@@ -103,8 +104,8 @@ const SideNav = () => {
         >
           <Link
             variant={"tertiary"}
-            href={"/rooms"}
-            active={handleActiveLink("rooms")}
+            href={"/tokenSets"}
+            active={handleActiveLink("")}
             stretch
           >
             {" "}

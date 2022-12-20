@@ -195,6 +195,7 @@ export const {
       // Semantic colors
       textPrimary: "$sand12",
       textSecondary: "$sand11",
+      textAccent: '$orange9',
       textMuted: "$sand9",
       bgPrimary: "$sand1",
       bgSecondary: "$sand2",
@@ -478,6 +479,7 @@ export const darkTheme = createTheme("dark-theme", {
 
     textPrimary: "$sand12",
     textSecondary: "$sand11",
+    textAccent: '$orange9',
     textMuted: "$sand9",
     bgPrimary: "$sand1",
     bgSecondary: "$sand2",
